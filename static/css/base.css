@@ -1,0 +1,278 @@
+/* CSS info:
+
+#id
+.class
+ */
+
+
+
+
+/* TEXT */
+
+h1, h2, h3, h4, h5, h6, p, ul, li, ol, a
+{
+    font-family:courier;
+    color: rgb(59, 59, 59);
+}
+@media screen and (max-width: 1024px)
+{
+    h1, h2, h3, h4, h5, h6, p, ul, li, ol, a
+    {
+        font-size: 1.5em;
+    }
+}
+
+h1, h2
+{
+    text-shadow: 0 0 0.05em white, 0 0 0.05em  white, 0 0 0.05em  white;
+    text-align: center;
+}
+
+h3:hover
+{
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+    color: rgb(170, 0, 0);
+    text-shadow: 0 0 0.02em white, 0 0 0.02em  white, 0 0 0.02em  white;
+}
+
+p
+{
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+/* BASE */
+
+html
+{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    background-color: #ffeb94;
+    max-width: 80%;
+    margin-left: 10%;
+}
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+}
+
+nav
+{
+    border: solid black 1px;
+    background-color: #ffeb94;
+    margin-top: 0%;
+    display: flex;
+    position: fixed;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: 5%;
+    height: 8%;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 1024px)
+{
+    nav
+    {
+        width: 90%;
+        height: 5%;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    #Contact
+    {
+        display: none;
+    }
+}
+
+section
+{
+    /* border: solid black 2px; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 1024px)
+{
+    section
+    {
+        flex-direction: column;
+        height: 6%;
+    }
+}
+
+article
+{
+    /* border: solid rgb(207, 0, 0) 2px; */
+    border-radius: 8px;
+    padding: 5%;
+}
+@media screen and (max-width: 1024px)
+{
+    article
+    {
+        height: 6%;
+    }
+}
+
+aside
+{
+    /* border: solid rgb(25, 211, 0) 2px; */
+    border-radius: 8px;
+    width: 45%;
+}
+@media screen and (max-width: 1024px)
+{
+    aside
+    {
+        height: 6%;
+    }
+}
+
+img
+{
+    margin-left: 25%;
+}
+@media screen and (max-width: 1024px)
+{
+    img
+    {
+        margin-left: 80%;
+    }
+}
+
+footer
+{
+    /* border: solid black 2px; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+@media screen and (max-width: 1024px)
+{
+    footer
+    {
+        height: 6%;
+    }
+}
+
+#presentation, #parcours, #skills, #contact
+{
+    margin-left: 45%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+@media screen and (max-width: 1024px)
+{
+    #presentation, #parcours, #skills, #contact
+    {
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
+}
+
+#github
+{
+    content: url('github.png');
+    height: 100px;
+    padding: 20%;
+}
+@media screen and (max-width: 1024px)
+{
+    #github
+    {
+        height: 150px;
+        padding: 10%;
+        padding-left: 40%;
+    }
+}
+
+#github:hover
+{
+    content: url('github_02.png');
+    transform: scale(1.05);
+    transition: transform 100ms ease-in-out;
+}
+
+#block-contact, #block-phone, #block-email
+{
+    /* border: solid black 2px; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#block-phone, #block-email
+{
+    width: 30%;
+}
+
+#phone
+{
+    content: url('phone.png');
+    height: 100px;
+}
+
+#phone:hover
+{
+    content: url('phone_nb.png');
+    transform: scale(1.5);
+    transition: transform 100ms ease-in-out;
+}
+
+#email
+{
+    content: url('mail.png');
+    height: 100px;
+}
+
+#email:hover
+{
+    content: url('mail_02.png');
+    /* transform: scale(1.05);
+    transition: transform 100ms ease-in-out; */
+}
+
+@media screen and (max-width: 1024px)
+{
+    #thomsart
+    {
+        height: 40em;
+        margin-left: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOME */
+
+/* MENTIONS LEGALES */
