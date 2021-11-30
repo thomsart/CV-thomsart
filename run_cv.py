@@ -30,7 +30,9 @@ def mentions_legales():
 
 
 if __name__ == '__main__':
+    print('launch manualy')
     run(host='localhost', port=8080, debug=True, reloader=True)
 
+print('launch by a commande')
 run(server='gunicorn', host='92.222.167.113', port=80, debug=False)
 # app = bottle.default_app()
