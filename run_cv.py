@@ -30,7 +30,7 @@ def mentions_legales():
 
 
 if __name__ == '__main__':
-    # run(host='localhost', port=8080, debug=True, reloader=True)
-    run(host='92.222.167.113', port=80, debug=False)
+    run(host='localhost', port=8080, debug=True, reloader=True)
 
-app = bottle.default_app()
+run(server='gunicorn', host='92.222.167.113', port=80, debug=False)
+# app = bottle.default_app()
