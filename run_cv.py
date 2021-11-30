@@ -36,4 +36,4 @@ def mentions_legales():
 # run(host='92.222.167.113', port=80)
 # # app = bottle.default_app()
 
-run(bottle.app(), host='0.0.0.0', port=80)
+run(host='0.0.0.0', port=80)
