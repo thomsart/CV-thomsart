@@ -29,11 +29,9 @@ def mentions_legales():
     return template('mentions_legales', name=mentions_legales)
 
 
-# if __name__ == '__main__':
-#     print('launch manualy')
-#     run(host='localhost', port=8080, debug=True, reloader=True)
+if __name__ == '__main__':
+    print('launch manualy')
+    run(host='localhost', port=8080, debug=True, reloader=True)
 
 # run(host='92.222.167.113', port=80)
-# # app = bottle.default_app()
-
-run(host='0.0.0.0', port=80)
+app = bottle.default_app()
