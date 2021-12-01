@@ -7,4 +7,4 @@ print('launch on vps')
 
 from launch_cv_localy import *
 
-run(app, host='0.0.0.0', port=80, debug=None)
+run(app, port=80, debug=None)
