@@ -1,9 +1,13 @@
-""" 
+""" !/usr/bin/env python3
+    -*- coding: utf-8 -*-
+
 This module is use to execute the server of the site www.thomsart.tech """
 
 import bottle
 from bottle import route, static_file, template, run
 
+
+# app = bottle.default_app()
 
 @route('<filename:path>')
 def return_css(filename):
@@ -30,8 +34,5 @@ def mentions_legales():
 
 
 if __name__ == '__main__':
-    print('launch manualy')
-    run(host='0.0.0.0', port=8080, debug=True, reloader=True)
-
-# run(host='92.222.167.113', port=80)
-app = bottle.default_app()
+    print('launch on local')
+    run(host='localhost', port=8080, debug=True, reloader=True)
