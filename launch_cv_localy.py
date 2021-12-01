@@ -4,10 +4,11 @@
 This module is use to execute the server of the site www.thomsart.tech """
 
 import bottle
-from bottle import route, static_file, template, run
+from bottle import Bottle, route, static_file, template, run
 
+app = Bottle()
 
-@route('<filename:path>')
+@app.route('<filename:path>')
 def return_css(filename):
     """ The path to return css files """
 
@@ -17,14 +18,14 @@ def return_css(filename):
         return static_file(filename, root='static/assets/img/')
 
 
-@route('/')
+@app.route('/')
 def home():
     """ The path to return the home template """
 
     return template('home', name=home)
 
 
-@route('/mentions_legales')
+@app.route('/mentions_legales')
 def mentions_legales():
     """ The path to return the mentions legales template """
 
@@ -33,4 +34,4 @@ def mentions_legales():
 
 if __name__ == '__main__':
     print('launch on local')
-    run(host='localhost', port=8080, debug=True, reloader=True)
+    run(app, host='localhost', port=8080, debug=True, reloader=True)
