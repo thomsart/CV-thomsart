@@ -7,8 +7,6 @@ import bottle
 from bottle import route, static_file, template, run
 
 
-# app = bottle.default_app()
-
 @route('<filename:path>')
 def return_css(filename):
     """ The path to return css files """

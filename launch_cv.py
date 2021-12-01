@@ -7,4 +7,5 @@ print('launch on vps')
 
 from launch_cv_localy import *
 
-run(host='92.222.167.113', port=80)
+app = bottle.default_app()
+# run(host='92.222.167.113', port=80)
