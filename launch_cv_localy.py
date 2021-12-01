@@ -37,4 +37,4 @@ if __name__ == '__main__':
     run(app, host='localhost', port=8080, debug=True, reloader=True)
 else:
     print('launch on vps')
-    run(app, host='www.thomsart.tech', port=80, debug=None)
+    run(server='paste')
