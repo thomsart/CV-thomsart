@@ -35,3 +35,6 @@ def mentions_legales():
 if __name__ == '__main__':
     print('launch on local')
     run(app, host='localhost', port=8080, debug=True, reloader=True)
+else:
+    print('launch on vps')
+    run(app, host='92.222.167.113', port=80, debug=None)
