@@ -5,6 +5,6 @@ This module launch the cv on ubuntu vps """
 
 print('launch on vps')
 
-from . import run_cv
+from . import launch_cv_localy
 
 run(host='92.222.167.113', port=80)
