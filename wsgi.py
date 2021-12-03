@@ -3,4 +3,4 @@
 
 This module launch the cv on ubuntu vps """
 
-import launch_localy
+import launch_cv
